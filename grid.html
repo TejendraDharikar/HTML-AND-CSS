@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image grid</title>
+    <style>
+      *{
+        margin:0;
+      }
+  .gallery{
+    display:grid;
+    grid-template-columns: 250px 250px 250px;
+    background-color: rgb(134, 61, 134);
+    width: 750px;
+    padding: 5px ;
+    
+  }
+
+  img{
+   width: 245px;
+  }
+.image-l{
+grid-row: span 3;
+}
+.image-s{
+ grid-row:span 1; 
+}
+    </style>
+  </head>
+  <body>
+   <div class="gallery">
+    <div class="image-l"><img src="apartment.img"></div>
+    <div class="image-s"><img src="beach.img"></div>
+    <div class="image-l"> <img src="door.img"></div>
+    <div class="image-l"> <img src="fog.img"></div>
+    <div class="image-s"><img src="dinner.img"></div>
+    <div class="image-s"> <img src="room.img"></div>
+   </div> 
+  </body>
+</html>
